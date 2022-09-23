@@ -1,0 +1,11 @@
+spring:
+  web:
+    resources:
+      # 静态资源的路径
+      static-locations: [classpath:/yyin/]
+  mvc:
+#    static-path-pattern: /res/**
+    # 使用REST风格的请求需要开启
+    hiddenmethod:
+      filter:
+        enabled: true
