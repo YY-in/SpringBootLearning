@@ -1,4 +1,7 @@
 spring:
+  devtools:
+    restart:
+      enabled: true
   web:
     resources:
       # 静态资源的路径

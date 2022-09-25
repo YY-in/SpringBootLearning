@@ -14,7 +14,7 @@
     <input value="REST-POST 提交" type="submit"/>
 </form>
 <form action="/user" method="post">
-    <input name="_method" type="hidden" value="delete"/>
+<!--    <input name="_method" type="hidden" value="delete"/>-->
     <input name="_m" type="hidden" value="delete"/>
     <input value="REST-DELETE 提交" type="submit"/>
 </form>
@@ -25,6 +25,10 @@
 <hr/>
 测试基本注解：
 <ul>
+    <script>
+        document.cookie = "ga=test"
+        document.cookie = "_ga=YYin test on 2022.9.25"
+    </script>
     <a href="car/3/owner/lisi?age=18&inters=basketball&inters=game">car/{id}/owner/{username}</a>
     <li>@PathVariable（路径变量）</li>
     <li>@RequestHeader（获取请求头）</li>
