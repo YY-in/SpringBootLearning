@@ -33,7 +33,7 @@ class RequestController {
         val msg1 = request.getAttribute("msg")
         val map = HashMap<String,Any>()
         map["reqMethod_msg"]=msg1
-        //直接利用注解获取属性
+        //直接利用注解获取属性,
         map["annotation_msg"]=msg
         map["code"]= code
         return map
